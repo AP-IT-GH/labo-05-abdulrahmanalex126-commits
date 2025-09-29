@@ -1,0 +1,35 @@
+body {
+  min-height: 100dvh;
+  font-family: Arial, sans-serif;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  /* grid-template-rows: 1fr  1fr  1fr; */
+
+  > * {
+    padding: 1rem;
+  }
+}
+
+header {
+  background-color: blue;
+  grid-column-start: 1;
+  grid-column-end: -1;
+}
+
+main {
+  background-color: palegreen;
+  grid-column-start: 1;
+  grid-column-end: 5;
+}
+
+aside {
+  background-color: aquamarine;
+  /* grid-column-start: 1;
+        grid-column-end: -1; */
+}
+
+footer {
+  background-color: aqua;
+  grid-column-start: 1;
+  grid-column-end: -1;
+}
